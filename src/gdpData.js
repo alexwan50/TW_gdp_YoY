@@ -1,5 +1,7 @@
-// === Taiwan Quarterly GDP YoY % (Confirmed from DGBAS 2006 Q1 – 2025 Q4) ===
-// Source: https://nstatdb.dgbas.gov.tw/
+// === Taiwan Quarterly GDP YoY % (DGBAS 2006 Q1 – 2026 Q4) ===
+// Source: 臺灣經濟成長率_20260406.xlsx (主計總處)
+// 2006–2025: Actual/Preliminary
+// 2026: DGBAS Forecast
 export const GDP_YOY_DATA = [
   6.05, 5.64, 7.19, 4.33,   // 2006
   5.64, 7.12, 7.97, 6.58,   // 2007
@@ -20,9 +22,67 @@ export const GDP_YOY_DATA = [
   3.85, 3.51, 4.06, -0.43,  // 2022
   -3.58, 1.42, 1.56, 4.74,  // 2023
   7.16, 5.33, 4.66, 4.13,   // 2024 (Preliminary)
-  5.54, 7.71, 8.42, 12.65,  // 2025 (Forecasted)
-  undefined, undefined, undefined, undefined // 2026
+  5.54, 7.71, 8.42, 12.65,  // 2025 (Preliminary)
+  11.46, 9.30, 7.76, 3.09,  // 2026 (DGBAS Forecast)
 ];
+
+// SAAR (Seasonally Adjusted Annual Rate) for 2026 forecast
+export const GDP_SAAR_FORECAST = [
+  { quarter: '2026Q1', saar: 3.36 },
+  { quarter: '2026Q2', saar: 2.78 },
+  { quarter: '2026Q3', saar: 3.39 },
+  { quarter: '2026Q4', saar: 1.66 },
+];
+
+// Start year for the dataset
+export const GDP_START_YEAR = 2006;
+
+// Number of quarters that are forecast (from the end of array)
+export const FORECAST_QUARTERS = 4;
+
+// === Trough Detection ===
+// Automatically find the YoY trough from the peak of this cycle
+export function detectTrough(data, forecastCount = 4) {
+  const totalQ = data.length;
+  // Look backwards from end to find peak, then trough after peak
+  // This cycle: peak is 2025Q4 (12.65%), trough is 2026Q4 (3.09%)
+
+  // Find peak in last 12 quarters
+  const lookback = 12;
+  const startIdx = Math.max(0, totalQ - lookback);
+  let peakIdx = startIdx;
+  let peakVal = -Infinity;
+
+  for (let i = startIdx; i < totalQ; i++) {
+    if (data[i] !== undefined && data[i] !== null && data[i] > peakVal) {
+      peakVal = data[i];
+      peakIdx = i;
+    }
+  }
+
+  // Find trough AFTER peak (the declining phase)
+  let troughIdx = peakIdx;
+  let troughVal = Infinity;
+  for (let i = peakIdx; i < totalQ; i++) {
+    if (data[i] !== undefined && data[i] !== null && data[i] < troughVal) {
+      troughVal = data[i];
+      troughIdx = i;
+    }
+  }
+
+  const peakYear = GDP_START_YEAR + Math.floor(peakIdx / 4);
+  const peakQ = (peakIdx % 4) + 1;
+  const troughYear = GDP_START_YEAR + Math.floor(troughIdx / 4);
+  const troughQ = (troughIdx % 4) + 1;
+  const isForecast = troughIdx >= totalQ - forecastCount;
+
+  return {
+    peak: { index: peakIdx, value: peakVal, label: `${peakYear}Q${peakQ}` },
+    trough: { index: troughIdx, value: troughVal, label: `${troughYear}Q${troughQ}`, isForecast },
+    declineQuarters: troughIdx - peakIdx,
+    declineMagnitude: parseFloat((peakVal - troughVal).toFixed(2)),
+  };
+}
 
 // === Index overlay data (normalized to index values) ===
 export const INDEX_DATA = {
@@ -41,7 +101,7 @@ export const INDEX_DATA = {
       4109.3, 4450.3, 4288.0, 4769.8,                                // 23 (Real)
       5254.3, 5460.4, 5762.4, 5881.6,                                // 24 (Real)
       5611.8, 6204.9, 6688.4, 6845.5,                                // 25 (Real)
-      undefined, undefined, undefined, undefined                     // 2026 (Clear)
+      undefined, undefined, undefined, undefined                     // 2026
     ],
     min: 800, max: 8000,
   },
@@ -60,7 +120,7 @@ export const INDEX_DATA = {
       15868.0, 16915.5, 16399.8, 17930.8,                            // 23 (Real)
       20294.4, 23032.7, 22224.1, 22965.3,                            // 24 (Real)
       22542.8, 25603.2, 27245.8, 28450.6,                            // 25 (Real)
-      undefined, undefined, undefined, undefined                     // 2026 (Clear)
+      undefined, undefined, undefined, undefined                     // 2026
     ],
     min: 4000, max: 42000,
   },
@@ -79,7 +139,7 @@ export const INDEX_DATA = {
       19.03, 13.59, 17.52, 12.45,                                    // 23 (Real)
       13.01, 12.39, 16.76, 14.73,                                    // 24 (Real)
       15.11, 14.88, 18.23, 15.65,                                    // 25 (Real)
-      undefined, undefined, undefined, undefined                     // 2026 (Clear)
+      undefined, undefined, undefined, undefined                     // 2026
     ],
     min: 9, max: 60,
   },
@@ -98,7 +158,7 @@ export const INDEX_DATA = {
       3086.0, 3656.9, 3391.8, 4139.6,                                // 23 (Real)
       5137.3, 5472.9, 5274.5, 6368.1,                                // 24 (Real)
       6290.4, 7125.6, 7510.1, 7920.4,                                // 25 (Real)
-      undefined, undefined, undefined, undefined                     // 2026 (Clear)
+      undefined, undefined, undefined, undefined                     // 2026
     ],
     min: 200, max: 10000,
   },

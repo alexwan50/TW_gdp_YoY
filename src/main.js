@@ -87,7 +87,7 @@ function renderHeader(route) {
         <span class="material-symbols-outlined header-icon">insights</span>
         <h1 class="header-title">The Sovereign Analyst</h1>
       </div>
-      <button class="icon-btn" aria-label="Settings" id="btn-setup">
+      <button class="icon-btn" aria-label="Settings" id="btn-settings">
         <span class="material-symbols-outlined" style="font-size:1.5rem">settings</span>
       </button>
     </header>
@@ -138,10 +138,19 @@ function attachNavListeners() {
     });
   }
 
-  // Setup button on macro page
+  // Setup button on macro page (chart area)
   const setupBtn = document.getElementById('btn-setup');
   if (setupBtn) {
     setupBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.hash = 'config';
+    });
+  }
+
+  // Settings gear button in header
+  const settingsBtn = document.getElementById('btn-settings');
+  if (settingsBtn) {
+    settingsBtn.addEventListener('click', (e) => {
       e.preventDefault();
       window.location.hash = 'config';
     });
