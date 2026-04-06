@@ -251,11 +251,14 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-headline); }
 /* ── Bento Grid ──────────────────────────────────────── */
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
   margin-bottom: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
   .bento-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
@@ -663,4 +666,18 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-headline); }
 /* ── Material Symbols ────────────────────────────────── */
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ── Mobile Refinements ──────────────────────────────── */
+@media (max-width: 600px) {
+  .page-title { font-size: 1.75rem; margin-bottom: 1.5rem; }
+  .chart-section { padding: 1rem; }
+  .chart-title { font-size: 1rem; }
+  .bento-value { font-size: 1.75rem; }
+  #page-content { padding-left: 1rem; padding-right: 1rem; padding-top: 5rem; }
+  
+  /* Stack analysis cards insights */
+  .analysis-insights-stack {
+    flex-direction: column !important;
+  }
 }

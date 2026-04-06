@@ -381,7 +381,7 @@ export function renderMacroPage() {
             </table>
           </div>
 
-          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem">
+          <div class="analysis-insights-stack" style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem">
             <div style="flex:1;min-width:200px;padding:0.75rem;border-radius:8px;background:rgba(255,113,108,0.06);border:1px solid rgba(255,113,108,0.12)">
               <p style="font-size:10px;text-transform:uppercase;letter-spacing:0.5px;color:rgba(255,113,108,0.7);margin:0 0 4px">YoY 減速趨勢</p>
               <p style="font-size:13px;color:var(--on-surface);margin:0">YoY 從 ${trough.peak.value}% 快速收斂至 ${trough.trough.value}%，主因高基期效應。SAAR 持續在 1.6%-3.4% 低檔，顯示經濟動能趨緩。</p>
