@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-secondary-fixed": "#00210c",
+        "on-error-container": "#ffdad6",
+        "tertiary-fixed": "#ffdad6",
+        "surface": "#0b1229",
+        "inverse-primary": "#735c00",
+        "surface-bright": "#323851",
+        "tertiary": "#ffb4ac",
+        "tertiary-fixed-dim": "#ffb4ac",
+        "surface-container-highest": "#2d344c",
+        "on-secondary-container": "#003115",
+        "secondary-fixed": "#83fba5",
+        "on-tertiary-fixed-variant": "#92030f",
+        "inverse-on-surface": "#292f48",
+        "on-surface": "#dce1ff",
+        "inverse-surface": "#dce1ff",
+        "surface-dim": "#0b1229",
+        "outline": "#909098",
+        "surface-container-high": "#222941",
+        "secondary-fixed-dim": "#66dd8b",
+        "on-primary-container": "#997a00",
+        "surface-container": "#181e36",
+        "on-tertiary": "#690007",
+        "on-secondary": "#003919",
+        "surface-container-lowest": "#060d24",
+        "secondary-container": "#25a55a",
+        "on-error": "#690005",
+        "surface-tint": "#e9c349",
+        "primary-fixed": "#ffe088",
+        "outline-variant": "#46464d",
+        "surface-container-low": "#141a32",
+        "on-tertiary-container": "#e1453f",
+        "on-secondary-fixed-variant": "#005227",
+        "primary-fixed-dim": "#e9c349",
+        "primary-container": "#191200",
+        "on-primary": "#3c2f00",
+        "error": "#ffb4ab",
+        "primary": "#e9c349",
+        "tertiary-container": "#2f0001",
+        "background": "#0b1229",
+        "on-primary-fixed-variant": "#574500",
+        "secondary": "#66dd8b",
+        "on-surface-variant": "#c6c6ce",
+        "on-primary-fixed": "#241a00",
+        "surface-variant": "#2d344c",
+        "on-background": "#dce1ff",
+        "error-container": "#93000a",
+        "on-tertiary-fixed": "#410003"
+      },
+      borderRadius: {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "headline": ["Manrope"],
+        "body": ["Manrope"],
+        "label": ["Inter"]
+      }
+    },
+  },
+  plugins: [],
+}

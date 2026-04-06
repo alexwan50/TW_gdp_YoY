@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chart Configuration | The Sovereign Analyst</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "secondary-fixed-dim": "#58e7ab",
+                "primary-dim": "#0070ea",
+                "on-surface": "#f8f9fe",
+                "primary-fixed-dim": "#5091ff",
+                "on-surface-variant": "#a9abaf",
+                "tertiary-fixed-dim": "#e79400",
+                "on-error": "#490006",
+                "background": "#0b0e11",
+                "on-secondary-fixed": "#00452d",
+                "surface-variant": "#22262b",
+                "secondary-dim": "#58e7ab",
+                "on-primary-fixed": "#000000",
+                "secondary": "#69f6b8",
+                "error-container": "#9f0519",
+                "surface-container-low": "#101417",
+                "inverse-surface": "#f8f9fe",
+                "on-secondary": "#005a3c",
+                "on-background": "#f8f9fe",
+                "tertiary-dim": "#e79400",
+                "tertiary-container": "#f8a010",
+                "error": "#ff716c",
+                "surface-bright": "#282d31",
+                "inverse-primary": "#005bc1",
+                "primary": "#84adff",
+                "on-tertiary-fixed-variant": "#563400",
+                "error-dim": "#d7383b",
+                "surface-tint": "#84adff",
+                "primary-fixed": "#6c9fff",
+                "on-tertiary-fixed": "#2a1700",
+                "on-error-container": "#ffa8a3",
+                "surface": "#0b0e11",
+                "secondary-fixed": "#69f6b8",
+                "outline-variant": "#45484c",
+                "surface-container": "#161a1e",
+                "surface-container-lowest": "#000000",
+                "on-secondary-fixed-variant": "#006544",
+                "secondary-container": "#006c49",
+                "on-secondary-container": "#e1ffec",
+                "on-primary": "#002d64",
+                "surface-dim": "#0b0e11",
+                "tertiary": "#ffb148",
+                "on-tertiary": "#573500",
+                "on-primary-fixed-variant": "#002a60",
+                "tertiary-fixed": "#f8a010",
+                "on-primary-container": "#00214e",
+                "primary-container": "#6c9fff",
+                "outline": "#737679",
+                "surface-container-high": "#1c2024",
+                "inverse-on-surface": "#535559",
+                "on-tertiary-container": "#4a2c00",
+                "surface-container-highest": "#22262b"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.375rem",
+                "xl": "0.75rem",
+                "2xl": "1rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0b0e11;
+            color: #f8f9fe;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .toggle-switch:checked + .toggle-bg {
+            background-color: #69f6b8;
+        }
+        .toggle-switch:checked + .toggle-bg::after {
+            transform: translateX(1.25rem);
+        }
+        .glass-header {
+            background: rgba(11, 14, 17, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary/30 min-h-screen pb-40">
+<header class="glass-header fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-full active:scale-90 duration-150" onclick="window.location.href='{{DATA:SCREEN:SCREEN_16}}'">
+<span class="material-symbols-outlined !text-2xl" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline font-bold text-xl text-on-surface tracking-tight">Chart Configuration</h1>
+</div>
+<div class="flex items-center gap-2">
+<div class="text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant/60 bg-white/5 px-3 py-1.5 rounded-full hidden md:block border border-white/5">Sovereign Terminal</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors p-2 rounded-full active:scale-90 duration-150">
+<span class="material-symbols-outlined !text-2xl" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-5 max-w-xl mx-auto space-y-10">
+<!-- Market Indices Section -->
+<section class="space-y-4">
+<div class="flex items-baseline justify-between px-1">
+<h2 class="font-headline text-on-surface font-extrabold text-sm uppercase tracking-widest opacity-90">Market Indices</h2>
+<span class="text-[10px] text-primary/70 font-bold tracking-wider uppercase">Real-Time Overlay</span>
+</div>
+<div class="bg-surface-container/40 border border-white/5 rounded-2xl overflow-hidden divide-y divide-white/5 backdrop-blur-sm">
+<!-- S&P 500 -->
+<label class="flex items-center justify-between p-4 cursor-pointer hover:bg-white/[0.02] transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+</div>
+<div>
+<p class="font-headline font-bold text-[15px] text-on-surface">S&amp;P 500</p>
+<p class="text-xs text-on-surface-variant font-medium">US Equity Benchmark</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input checked="" class="sr-only toggle-switch" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full transition-all duration-200 toggle-bg after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all after:shadow-sm"></div>
+</div>
+</label>
+<!-- TAIEX -->
+<label class="flex items-center justify-between p-4 cursor-pointer hover:bg-white/[0.02] transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+</div>
+<div>
+<p class="font-headline font-bold text-[15px] text-on-surface">TAIEX</p>
+<p class="text-xs text-on-surface-variant font-medium">Taiwan Cap Weighted Index</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input class="sr-only toggle-switch" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full transition-all duration-200 toggle-bg after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all after:shadow-sm"></div>
+</div>
+</label>
+<!-- VIX -->
+<label class="flex items-center justify-between p-4 cursor-pointer hover:bg-white/[0.02] transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+</div>
+<div>
+<p class="font-headline font-bold text-[15px] text-on-surface">VIX Index</p>
+<p class="text-xs text-on-surface-variant font-medium">Volatility "Fear" Gauge</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input checked="" class="sr-only toggle-switch" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full transition-all duration-200 toggle-bg after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all after:shadow-sm"></div>
+</div>
+</label>
+<!-- SOX -->
+<label class="flex items-center justify-between p-4 cursor-pointer hover:bg-white/[0.02] transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+<span class="material-symbols-outlined" data-icon="memory">memory</span>
+</div>
+<div>
+<p class="font-headline font-bold text-[15px] text-on-surface">SOX Index</p>
+<p class="text-xs text-on-surface-variant font-medium">Philadelphia Semiconductor</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input class="sr-only toggle-switch" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full transition-all duration-200 toggle-bg after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all after:shadow-sm"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Technical Indicators Section -->
+<section class="space-y-4">
+<div class="flex items-baseline justify-between px-1">
+<h2 class="font-headline text-on-surface font-extrabold text-sm uppercase tracking-widest opacity-90">Technical Indicators</h2>
+<span class="text-[10px] text-tertiary/80 font-bold tracking-wider uppercase">Algorithmic</span>
+</div>
+<div class="bg-surface-container/40 border border-white/5 rounded-2xl overflow-hidden divide-y divide-white/5 backdrop-blur-sm">
+<!-- RSI -->
+<label class="flex items-center justify-between p-4 cursor-pointer hover:bg-white/[0.02] transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary border border-tertiary/20">
+<span class="material-symbols-outlined" data-icon="waves">waves</span>
+</div>
+<div>
+<p class="font-headline font-bold text-[15px] text-on-surface">RSI (14)</p>
+<p class="text-xs text-on-surface-variant font-medium">Relative Strength Index</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input checked="" class="sr-only toggle-switch" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full transition-all duration-200 toggle-bg after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all after:shadow-sm"></div>
+</div>
+</label>
+<!-- Moving Average -->
+<label class="flex items-center justify-between p-4 cursor-pointer hover:bg-white/[0.02] transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+<span class="material-symbols-outlined" data-icon="show_chart">show_chart</span>
+</div>
+<div>
+<p class="font-headline font-bold text-[15px] text-on-surface">Moving Average</p>
+<p class="text-xs text-on-surface-variant font-medium">50/200 Day Golden Cross</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input class="sr-only toggle-switch" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full transition-all duration-200 toggle-bg after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all after:shadow-sm"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Macro Data Section -->
+<section class="space-y-4">
+<div class="flex items-baseline justify-between px-1">
+<h2 class="font-headline text-on-surface font-extrabold text-sm uppercase tracking-widest opacity-90">Macro Data</h2>
+<span class="text-[10px] text-secondary/80 font-bold tracking-wider uppercase">Institutional</span>
+</div>
+<div class="bg-surface-container/40 border border-white/5 rounded-2xl overflow-hidden divide-y divide-white/5 backdrop-blur-sm">
+<!-- Interest Rate -->
+<label class="flex items-center justify-between p-4 cursor-pointer hover:bg-white/[0.02] transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary border border-secondary/20">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+</div>
+<div>
+<p class="font-headline font-bold text-[15px] text-on-surface">Interest Rate</p>
+<p class="text-xs text-on-surface-variant font-medium">Central Bank Benchmark</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input checked="" class="sr-only toggle-switch" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full transition-all duration-200 toggle-bg after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all after:shadow-sm"></div>
+</div>
+</label>
+<!-- Inflation -->
+<label class="flex items-center justify-between p-4 cursor-pointer hover:bg-white/[0.02] transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+</div>
+<div>
+<p class="font-headline font-bold text-[15px] text-on-surface">Inflation Rate</p>
+<p class="text-xs text-on-surface-variant font-medium">CPI Trend Analysis</p>
+</div>
+</div>
+<div class="relative flex items-center">
+<input class="sr-only toggle-switch" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full transition-all duration-200 toggle-bg after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all after:shadow-sm"></div>
+</div>
+</label>
+</div>
+</section>
+</main>
+<!-- Bottom Fixed Actions -->
+<div class="fixed bottom-0 left-0 w-full p-6 pt-10 bg-gradient-to-t from-background via-background/95 to-transparent z-40">
+<div class="max-w-xl mx-auto flex gap-4">
+<button class="flex-1 bg-white/5 text-on-surface-variant font-headline font-bold text-sm py-4 rounded-2xl border border-white/10 hover:bg-white/10 hover:text-on-surface transition-all active:scale-95">
+            Reset to Default
+        </button>
+<a class="flex-[1.5] flex items-center justify-center bg-[#84ADFF] text-[#002d64] font-headline font-extrabold text-sm py-4 rounded-2xl shadow-[0_8px_20px_-4px_rgba(132,173,255,0.4)] hover:brightness-110 transition-all active:scale-95" href="{{DATA:SCREEN:SCREEN_16}}">
+            Save Changes
+        </a>
+</div>
+</div>
+<!-- Background Elements -->
+<div class="fixed top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+<div class="fixed bottom-0 left-0 w-[400px] h-[400px] bg-secondary/5 blur-[100px] rounded-full -z-10 -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+</body></html>

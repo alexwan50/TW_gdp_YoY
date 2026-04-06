@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Sovereign Analyst - Macro Trends</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#58e7ab",
+                        "primary-dim": "#0070ea",
+                        "on-surface": "#f8f9fe",
+                        "primary-fixed-dim": "#5091ff",
+                        "on-surface-variant": "#a9abaf",
+                        "tertiary-fixed-dim": "#e79400",
+                        "on-error": "#490006",
+                        "background": "#0b0e11",
+                        "on-secondary-fixed": "#00452d",
+                        "surface-variant": "#22262b",
+                        "secondary-dim": "#58e7ab",
+                        "on-primary-fixed": "#000000",
+                        "secondary": "#69f6b8",
+                        "error-container": "#9f0519",
+                        "surface-container-low": "#101417",
+                        "inverse-surface": "#f8f9fe",
+                        "on-secondary": "#005a3c",
+                        "on-background": "#f8f9fe",
+                        "tertiary-dim": "#e79400",
+                        "tertiary-container": "#f8a010",
+                        "error": "#ff716c",
+                        "surface-bright": "#282d31",
+                        "inverse-primary": "#005bc1",
+                        "primary": "#84adff",
+                        "on-tertiary-fixed-variant": "#563400",
+                        "error-dim": "#d7383b",
+                        "surface-tint": "#84adff",
+                        "primary-fixed": "#6c9fff",
+                        "on-tertiary-fixed": "#2a1700",
+                        "on-error-container": "#ffa8a3",
+                        "surface": "#0b0e11",
+                        "secondary-fixed": "#69f6b8",
+                        "outline-variant": "#45484c",
+                        "surface-container": "#161a1e",
+                        "surface-container-lowest": "#000000",
+                        "on-secondary-fixed-variant": "#006544",
+                        "secondary-container": "#006c49",
+                        "on-secondary-container": "#e1ffec",
+                        "on-primary": "#002d64",
+                        "surface-dim": "#0b0e11",
+                        "tertiary": "#ffb148",
+                        "on-tertiary": "#573500",
+                        "on-primary-fixed-variant": "#002a60",
+                        "tertiary-fixed": "#f8a010",
+                        "on-primary-container": "#00214e",
+                        "primary-container": "#6c9fff",
+                        "outline": "#737679",
+                        "surface-container-high": "#1c2024",
+                        "inverse-on-surface": "#535559",
+                        "on-tertiary-container": "#4a2c00",
+                        "surface-container-highest": "#22262b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { background-color: #0B0E11; color: #F8F9FE; font-family: 'Inter', sans-serif; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .glass-effect { background: rgba(11, 14, 17, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .card-gradient { background: linear-gradient(135deg, rgba(22, 26, 30, 1) 0%, rgba(16, 20, 23, 1) 100%); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="antialiased pb-24">
+<!-- TopAppBar Execution -->
+<header class="glass-effect fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 border-b border-white/5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#84ADFF]" data-icon="insights">insights</span>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-xl text-[#F8F9FE]">The Sovereign Analyst</h1>
+</div>
+<button class="text-[#A9ABAF] hover:bg-[#84ADFF]/10 transition-colors p-2 rounded-lg active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-lg mx-auto">
+<!-- Dashboard Greeting & Date -->
+<section class="mb-8">
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/80 mb-2 font-semibold">Intelligence Briefing</p>
+<h2 class="font-headline text-3xl font-extrabold text-on-surface tracking-tight">Macro Overview</h2>
+</section>
+<!-- Bento Grid: Key Highlights -->
+<section class="grid grid-cols-2 gap-4 mb-10">
+<!-- GDP Forecast -->
+<div class="card-gradient p-5 rounded-2xl flex flex-col justify-between h-36 relative overflow-hidden border border-white/5 group transition-all duration-300 hover:border-primary/30">
+<div class="z-10">
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">GDP Forecast</p>
+<p class="text-3xl font-headline font-extrabold text-secondary mt-1">3.2%</p>
+</div>
+<div class="flex items-center gap-1.5 z-10">
+<span class="material-symbols-outlined text-[14px] text-secondary" style='font-variation-settings: "FILL" 1;'>arrow_upward</span>
+<span class="text-[11px] font-medium text-on-surface-variant/90">Bullish Outlook</span>
+</div>
+<div class="absolute -right-2 -bottom-2 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-7xl text-primary" data-icon="trending_up">trending_up</span>
+</div>
+</div>
+<!-- Inflation Rate -->
+<div class="card-gradient p-5 rounded-2xl flex flex-col justify-between h-36 relative overflow-hidden border border-white/5 group transition-all duration-300 hover:border-primary/30">
+<div class="z-10">
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">Inflation Rate</p>
+<p class="text-3xl font-headline font-extrabold text-primary mt-1">4.1%</p>
+</div>
+<div class="flex items-center gap-1.5 z-10">
+<span class="material-symbols-outlined text-[14px] text-primary" style='font-variation-settings: "FILL" 1;'>info</span>
+<span class="text-[11px] font-medium text-on-surface-variant/90">Above Target</span>
+</div>
+<div class="absolute -right-2 -bottom-2 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-7xl text-primary" data-icon="water_drop">water_drop</span>
+</div>
+</div>
+<!-- Interest Rate -->
+<div class="card-gradient p-5 rounded-2xl flex flex-col justify-between h-36 relative overflow-hidden border border-white/5 group transition-all duration-300 hover:border-primary/30">
+<div class="z-10">
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">Interest Rate</p>
+<p class="text-3xl font-headline font-extrabold text-on-surface mt-1">5.25%</p>
+</div>
+<div class="flex items-center gap-1.5 z-10">
+<span class="material-symbols-outlined text-[14px] text-tertiary" style='font-variation-settings: "FILL" 1;'>pause</span>
+<span class="text-[11px] font-medium text-on-surface-variant/90">Terminal Rate</span>
+</div>
+<div class="absolute -right-2 -bottom-2 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-7xl text-tertiary" data-icon="account_balance">account_balance</span>
+</div>
+</div>
+<!-- VIX Index -->
+<div class="card-gradient p-5 rounded-2xl flex flex-col justify-between h-36 relative overflow-hidden border border-white/5 group transition-all duration-300 hover:border-primary/30">
+<div class="z-10">
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold">VIX Index</p>
+<p class="text-3xl font-headline font-extrabold text-secondary-dim mt-1">14.82</p>
+</div>
+<div class="flex items-center gap-1.5 z-10">
+<span class="material-symbols-outlined text-[14px] text-secondary-dim" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="text-[11px] font-medium text-on-surface-variant/90">Low Volatility</span>
+</div>
+<div class="absolute -right-2 -bottom-2 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-7xl text-secondary" data-icon="waves">waves</span>
+</div>
+</div>
+</section>
+<!-- Main Chart Section: Taiwan 20-Year GDP -->
+<section class="mb-10">
+<div class="flex justify-between items-start mb-6">
+<div class="max-w-[65%]">
+<h3 class="font-headline text-lg font-bold leading-tight">Taiwan 20-Year Quarterly GDP</h3>
+<p class="text-[11px] text-on-surface-variant mt-1 font-medium">YoY Percentage Change • 2004-2024</p>
+</div>
+<!-- Refined Chart Setup Button -->
+<a class="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary text-on-primary-fixed font-bold hover:brightness-110 transition-all active:scale-95 shadow-lg shadow-primary/25 group" href="#" onclick="return false;">
+<span class="material-symbols-outlined text-sm" data-icon="tune">tune</span>
+<span class="text-[10px] uppercase tracking-widest">Setup</span>
+</a>
+</div>
+<div class="bg-surface-container/50 border border-white/5 rounded-2xl p-5 overflow-hidden shadow-2xl">
+<!-- Dual Axis Legend -->
+<div class="flex gap-5 mb-6">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary shadow-sm shadow-primary/40"></div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-on-surface">GDP YoY</span>
+</div>
+<div class="flex items-center gap-2 opacity-60">
+<div class="w-3 h-0.5 rounded-full bg-outline-variant"></div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">TAIEX</span>
+</div>
+</div>
+<!-- Scrollable Chart Container -->
+<div class="relative">
+<!-- Y-Axis Fixed -->
+<div class="absolute left-0 top-0 bottom-0 w-8 flex flex-col justify-between py-2 text-[9px] font-mono text-on-surface-variant/70 z-10 bg-surface-container/90 backdrop-blur-sm pr-2">
+<span>12%</span>
+<span>8%</span>
+<span>4%</span>
+<span>0%</span>
+<span>-4%</span>
+<span>-8%</span>
+</div>
+<div class="overflow-x-auto no-scrollbar ml-8" id="chart-scroll">
+<div class="w-[1200px] h-64 relative flex items-end pb-8 pt-2">
+<!-- Refined Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between py-2 pointer-events-none">
+<div class="border-t border-white/[0.03] w-full"></div>
+<div class="border-t border-white/[0.03] w-full"></div>
+<div class="border-t border-white/[0.03] w-full"></div>
+<div class="border-t border-white/[0.03] w-full"></div>
+<div class="border-t border-white/[0.03] w-full"></div>
+<div class="border-t border-white/[0.03] w-full"></div>
+</div>
+<!-- Smoother Line Chart -->
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none" viewbox="0 0 1200 256">
+<defs>
+<lineargradient id="line-grad-new" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#84ADFF" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#84ADFF" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Area under curve (Simulated smooth path using quadratic curves) -->
+<path d="M0,128 Q25,110 50,110 T100,90 T150,140 T200,160 T250,100 T300,80 T350,110 T400,200 T450,230 T500,180 T550,120 T600,100 T650,90 T700,95 T750,110 T800,130 T850,100 T900,40 T950,20 T1000,60 T1050,100 T1100,115 T1150,105 T1200,110 V256 H0 Z" fill="url(#line-grad-new)"></path>
+<!-- Main Line (Simulated smooth path) -->
+<path d="M0,128 Q25,110 50,110 T100,90 T150,140 T200,160 T250,100 T300,80 T350,110 T400,200 T450,230 T500,180 T550,120 T600,100 T650,90 T700,95 T750,110 T800,130 T850,100 T900,40 T950,20 T1000,60 T1050,100 T1100,115 T1150,105 T1200,110" fill="none" stroke="#84ADFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Zero Line -->
+<line opacity="0.15" stroke="#F8F9FE" stroke-dasharray="6,4" stroke-width="1" x1="0" x2="1200" y1="170" y2="170"></line>
+</svg>
+<!-- X-Axis Labels (Quarters) -->
+<div class="flex w-full justify-between items-end text-[9px] font-mono text-on-surface-variant/50 uppercase tracking-tighter">
+<span class="w-[50px]">Q1 '04</span>
+<span class="w-[50px]">Q1 '06</span>
+<span class="w-[50px]">Q1 '08</span>
+<span class="w-[50px]">Q1 '10</span>
+<span class="w-[50px]">Q1 '12</span>
+<span class="w-[50px]">Q1 '14</span>
+<span class="w-[50px]">Q1 '16</span>
+<span class="w-[50px]">Q1 '18</span>
+<span class="w-[50px]">Q1 '20</span>
+<span class="w-[50px]">Q1 '22</span>
+<span class="w-[50px]">Q1 '24</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 flex justify-between items-center px-1">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="text-[10px] text-on-surface-variant font-medium">Live Market Synchronized</span>
+</div>
+<span class="text-[10px] font-mono text-on-surface-variant/60">Source: DGBAS Taiwan</span>
+</div>
+</div>
+</section>
+<!-- Institutional Insights -->
+<section class="mb-10">
+<h4 class="font-headline text-[11px] font-extrabold mb-5 uppercase tracking-[0.25em] text-[#84ADFF]">Institutional Sentiment</h4>
+<div class="space-y-4">
+<div class="bg-surface-container-low/40 border border-white/5 p-4 rounded-2xl flex items-center gap-4 active:bg-surface-container transition-colors group">
+<div class="relative">
+<img alt="Financial District" class="w-14 h-14 rounded-xl object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLup5UdDdY5FpJMxet-5XNdyiLLkvJHWZ_cnyoppnN-RgUGdaVj7XJc2DSQg2Onb2C8LmyKqNqwZM1wF2VEcRtuTkGBh4S9E136Gn6HYG7B8G_mNdDfnzGmwUHlyGPehbMBv8Ur79ICKJW8Zuj5S0_akHIxzZW6SxwyVLXwgLtP3EiwJ0uKhl10eryTzpn-aaSl0CW377R40_QX2XhEhtqOZLgCgxnbpjE64HnsM26AUz4hFTdplquV9WdmGVMB9LXWnqwNACT0Z0F"/>
+<div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl"></div>
+</div>
+<div class="flex-1 min-w-0">
+<h5 class="text-sm font-bold text-on-surface mb-1 truncate">最新主計處預測</h5>
+<p class="text-[11px] text-on-surface-variant leading-relaxed line-clamp-2 font-medium">Taiwan's 20-year GDP trajectory remains anchored to high-tech manufacturing exports...</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/50 text-xl group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="bg-surface-container-low/40 border border-white/5 p-4 rounded-2xl flex items-center gap-4 active:bg-surface-container transition-colors group">
+<div class="relative">
+<img alt="Stock Market Data" class="w-14 h-14 rounded-xl object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXCrmFeorQ5MpqhtohmcvL3PiS4HtGcEQzESjoZsFiyOiJBAC0U6VvCTzqO1eWkBep8ocopThB6k3bTWUQ__L1lcsqC2-f9_DH8-4YAu8mljRX25a6EvNWnLLRg1inbnswVwmuKMNPNqEaKO7W2ADRNW8CwLGkUoP1g2mbuoz-ZJkLuyZ9RI7JTk_Xw7LV4nNW7FaXAyFPmGsiFqOhJvcBe5V-xaCpjfwSOWliAOO-Dd4I3JVqInwl3OzWQEVsPzzb1Q1zcrTfqKDOyt"/>
+<div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl"></div>
+</div>
+<div class="flex-1 min-w-0">
+<h5 class="text-sm font-bold text-on-surface mb-1 truncate">最新國際財經消息</h5>
+<p class="text-[11px] text-on-surface-variant leading-relaxed line-clamp-2 font-medium">Central bank commentary suggests a 'higher for longer' stance into Q4 2024...</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/50 text-xl group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Execution -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-safe glass-effect z-50 border-t border-white/10 h-20 shadow-[0_-10px_40px_rgba(0,0,0,0.6)]">
+<a class="flex flex-col items-center justify-center text-[#69F6B8] border-t-2 border-[#69F6B8] h-full w-full" href="#">
+<span class="material-symbols-outlined mb-0.5" data-icon="analytics" style='font-variation-settings: "FILL" 1;'>analytics</span>
+<span class="font-['Inter'] text-[9px] uppercase tracking-[0.15em] font-bold">Macro</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#A9ABAF] h-full w-full hover:text-[#F8F9FE] transition-colors" href="#">
+<span class="material-symbols-outlined mb-0.5" data-icon="query_stats">query_stats</span>
+<span class="font-['Inter'] text-[9px] uppercase tracking-[0.15em] font-bold">Markets</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#A9ABAF] h-full w-full hover:text-[#F8F9FE] transition-colors" href="#">
+<span class="material-symbols-outlined mb-0.5" data-icon="auto_graph">auto_graph</span>
+<span class="font-['Inter'] text-[9px] uppercase tracking-[0.15em] font-bold">Analysis</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#A9ABAF] h-full w-full hover:text-[#F8F9FE] transition-colors" href="#">
+<span class="material-symbols-outlined mb-0.5" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-['Inter'] text-[9px] uppercase tracking-[0.15em] font-bold">Portfolio</span>
+</a>
+</nav>
+</body></html>
