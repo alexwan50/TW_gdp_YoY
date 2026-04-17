@@ -1,0 +1,1946 @@
+export const macroData = {
+  "2006-01-01": {
+    "cpi_index": 199.3,
+    "cpi_yoy": 4.02,
+    "fed_funds": 4.29,
+    "gs10": 4.42,
+    "gs2": 4.4,
+    "yield_spread": 0.02
+  },
+  "2006-02-01": {
+    "cpi_index": 199.4,
+    "cpi_yoy": 3.64,
+    "fed_funds": 4.49,
+    "gs10": 4.57,
+    "gs2": 4.67,
+    "yield_spread": -0.1
+  },
+  "2006-03-01": {
+    "cpi_index": 199.7,
+    "cpi_yoy": 3.42,
+    "fed_funds": 4.59,
+    "gs10": 4.72,
+    "gs2": 4.73,
+    "yield_spread": -0.01
+  },
+  "2006-04-01": {
+    "cpi_index": 200.7,
+    "cpi_yoy": 3.61,
+    "fed_funds": 4.79,
+    "gs10": 4.99,
+    "gs2": 4.89,
+    "yield_spread": 0.1
+  },
+  "2006-05-01": {
+    "cpi_index": 201.3,
+    "cpi_yoy": 3.98,
+    "fed_funds": 4.94,
+    "gs10": 5.11,
+    "gs2": 4.97,
+    "yield_spread": 0.14
+  },
+  "2006-06-01": {
+    "cpi_index": 201.8,
+    "cpi_yoy": 4.18,
+    "fed_funds": 4.99,
+    "gs10": 5.11,
+    "gs2": 5.12,
+    "yield_spread": -0.01
+  },
+  "2006-07-01": {
+    "cpi_index": 202.9,
+    "cpi_yoy": 4.1,
+    "fed_funds": 5.24,
+    "gs10": 5.09,
+    "gs2": 5.12,
+    "yield_spread": -0.03
+  },
+  "2006-08-01": {
+    "cpi_index": 203.8,
+    "cpi_yoy": 3.93,
+    "fed_funds": 5.25,
+    "gs10": 4.88,
+    "gs2": 4.9,
+    "yield_spread": -0.02
+  },
+  "2006-09-01": {
+    "cpi_index": 202.8,
+    "cpi_yoy": 2.01,
+    "fed_funds": 5.25,
+    "gs10": 4.72,
+    "gs2": 4.77,
+    "yield_spread": -0.05
+  },
+  "2006-10-01": {
+    "cpi_index": 201.9,
+    "cpi_yoy": 1.41,
+    "fed_funds": 5.25,
+    "gs10": 4.73,
+    "gs2": 4.8,
+    "yield_spread": -0.07
+  },
+  "2006-11-01": {
+    "cpi_index": 202.0,
+    "cpi_yoy": 1.97,
+    "fed_funds": 5.25,
+    "gs10": 4.6,
+    "gs2": 4.74,
+    "yield_spread": -0.14
+  },
+  "2006-12-01": {
+    "cpi_index": 203.1,
+    "cpi_yoy": 2.52,
+    "fed_funds": 5.24,
+    "gs10": 4.56,
+    "gs2": 4.67,
+    "yield_spread": -0.11
+  },
+  "2007-01-01": {
+    "cpi_index": 203.44,
+    "cpi_yoy": 2.08,
+    "fed_funds": 5.25,
+    "gs10": 4.76,
+    "gs2": 4.88,
+    "yield_spread": -0.12
+  },
+  "2007-02-01": {
+    "cpi_index": 204.23,
+    "cpi_yoy": 2.42,
+    "fed_funds": 5.26,
+    "gs10": 4.72,
+    "gs2": 4.85,
+    "yield_spread": -0.13
+  },
+  "2007-03-01": {
+    "cpi_index": 205.29,
+    "cpi_yoy": 2.8,
+    "fed_funds": 5.26,
+    "gs10": 4.56,
+    "gs2": 4.57,
+    "yield_spread": -0.01
+  },
+  "2007-04-01": {
+    "cpi_index": 205.9,
+    "cpi_yoy": 2.59,
+    "fed_funds": 5.25,
+    "gs10": 4.69,
+    "gs2": 4.67,
+    "yield_spread": 0.02
+  },
+  "2007-05-01": {
+    "cpi_index": 206.76,
+    "cpi_yoy": 2.71,
+    "fed_funds": 5.25,
+    "gs10": 4.75,
+    "gs2": 4.77,
+    "yield_spread": -0.02
+  },
+  "2007-06-01": {
+    "cpi_index": 207.23,
+    "cpi_yoy": 2.69,
+    "fed_funds": 5.25,
+    "gs10": 5.1,
+    "gs2": 4.98,
+    "yield_spread": 0.12
+  },
+  "2007-07-01": {
+    "cpi_index": 207.6,
+    "cpi_yoy": 2.32,
+    "fed_funds": 5.26,
+    "gs10": 5.0,
+    "gs2": 4.82,
+    "yield_spread": 0.18
+  },
+  "2007-08-01": {
+    "cpi_index": 207.67,
+    "cpi_yoy": 1.9,
+    "fed_funds": 5.02,
+    "gs10": 4.67,
+    "gs2": 4.31,
+    "yield_spread": 0.36
+  },
+  "2007-09-01": {
+    "cpi_index": 208.55,
+    "cpi_yoy": 2.83,
+    "fed_funds": 4.94,
+    "gs10": 4.52,
+    "gs2": 4.01,
+    "yield_spread": 0.51
+  },
+  "2007-10-01": {
+    "cpi_index": 209.19,
+    "cpi_yoy": 3.61,
+    "fed_funds": 4.76,
+    "gs10": 4.53,
+    "gs2": 3.97,
+    "yield_spread": 0.56
+  },
+  "2007-11-01": {
+    "cpi_index": 210.83,
+    "cpi_yoy": 4.37,
+    "fed_funds": 4.49,
+    "gs10": 4.15,
+    "gs2": 3.34,
+    "yield_spread": 0.81
+  },
+  "2007-12-01": {
+    "cpi_index": 211.44,
+    "cpi_yoy": 4.11,
+    "fed_funds": 4.24,
+    "gs10": 4.1,
+    "gs2": 3.12,
+    "yield_spread": 0.98
+  },
+  "2008-01-01": {
+    "cpi_index": 212.17,
+    "cpi_yoy": 4.29,
+    "fed_funds": 3.94,
+    "gs10": 3.74,
+    "gs2": 2.48,
+    "yield_spread": 1.26
+  },
+  "2008-02-01": {
+    "cpi_index": 212.69,
+    "cpi_yoy": 4.14,
+    "fed_funds": 2.98,
+    "gs10": 3.74,
+    "gs2": 1.97,
+    "yield_spread": 1.77
+  },
+  "2008-03-01": {
+    "cpi_index": 213.45,
+    "cpi_yoy": 3.97,
+    "fed_funds": 2.61,
+    "gs10": 3.51,
+    "gs2": 1.62,
+    "yield_spread": 1.89
+  },
+  "2008-04-01": {
+    "cpi_index": 213.94,
+    "cpi_yoy": 3.9,
+    "fed_funds": 2.28,
+    "gs10": 3.68,
+    "gs2": 2.05,
+    "yield_spread": 1.63
+  },
+  "2008-05-01": {
+    "cpi_index": 215.21,
+    "cpi_yoy": 4.09,
+    "fed_funds": 1.98,
+    "gs10": 3.88,
+    "gs2": 2.45,
+    "yield_spread": 1.43
+  },
+  "2008-06-01": {
+    "cpi_index": 217.46,
+    "cpi_yoy": 4.94,
+    "fed_funds": 2.0,
+    "gs10": 4.1,
+    "gs2": 2.77,
+    "yield_spread": 1.33
+  },
+  "2008-07-01": {
+    "cpi_index": 219.02,
+    "cpi_yoy": 5.5,
+    "fed_funds": 2.01,
+    "gs10": 4.01,
+    "gs2": 2.57,
+    "yield_spread": 1.44
+  },
+  "2008-08-01": {
+    "cpi_index": 218.69,
+    "cpi_yoy": 5.31,
+    "fed_funds": 2.0,
+    "gs10": 3.89,
+    "gs2": 2.42,
+    "yield_spread": 1.47
+  },
+  "2008-09-01": {
+    "cpi_index": 218.88,
+    "cpi_yoy": 4.95,
+    "fed_funds": 1.81,
+    "gs10": 3.69,
+    "gs2": 2.08,
+    "yield_spread": 1.61
+  },
+  "2008-10-01": {
+    "cpi_index": 217.0,
+    "cpi_yoy": 3.73,
+    "fed_funds": 0.97,
+    "gs10": 3.81,
+    "gs2": 1.61,
+    "yield_spread": 2.2
+  },
+  "2008-11-01": {
+    "cpi_index": 213.15,
+    "cpi_yoy": 1.1,
+    "fed_funds": 0.39,
+    "gs10": 3.53,
+    "gs2": 1.21,
+    "yield_spread": 2.32
+  },
+  "2008-12-01": {
+    "cpi_index": 211.4,
+    "cpi_yoy": -0.02,
+    "fed_funds": 0.16,
+    "gs10": 2.42,
+    "gs2": 0.82,
+    "yield_spread": 1.6
+  },
+  "2009-01-01": {
+    "cpi_index": 211.93,
+    "cpi_yoy": -0.11,
+    "fed_funds": 0.15,
+    "gs10": 2.52,
+    "gs2": 0.81,
+    "yield_spread": 1.71
+  },
+  "2009-02-01": {
+    "cpi_index": 212.7,
+    "cpi_yoy": 0.01,
+    "fed_funds": 0.22,
+    "gs10": 2.87,
+    "gs2": 0.98,
+    "yield_spread": 1.89
+  },
+  "2009-03-01": {
+    "cpi_index": 212.5,
+    "cpi_yoy": -0.45,
+    "fed_funds": 0.18,
+    "gs10": 2.82,
+    "gs2": 0.93,
+    "yield_spread": 1.89
+  },
+  "2009-04-01": {
+    "cpi_index": 212.71,
+    "cpi_yoy": -0.58,
+    "fed_funds": 0.15,
+    "gs10": 2.93,
+    "gs2": 0.93,
+    "yield_spread": 2.0
+  },
+  "2009-05-01": {
+    "cpi_index": 213.02,
+    "cpi_yoy": -1.02,
+    "fed_funds": 0.18,
+    "gs10": 3.29,
+    "gs2": 0.93,
+    "yield_spread": 2.36
+  },
+  "2009-06-01": {
+    "cpi_index": 214.79,
+    "cpi_yoy": -1.23,
+    "fed_funds": 0.21,
+    "gs10": 3.72,
+    "gs2": 1.18,
+    "yield_spread": 2.54
+  },
+  "2009-07-01": {
+    "cpi_index": 214.73,
+    "cpi_yoy": -1.96,
+    "fed_funds": 0.16,
+    "gs10": 3.56,
+    "gs2": 1.02,
+    "yield_spread": 2.54
+  },
+  "2009-08-01": {
+    "cpi_index": 215.44,
+    "cpi_yoy": -1.48,
+    "fed_funds": 0.16,
+    "gs10": 3.59,
+    "gs2": 1.12,
+    "yield_spread": 2.47
+  },
+  "2009-09-01": {
+    "cpi_index": 215.86,
+    "cpi_yoy": -1.38,
+    "fed_funds": 0.15,
+    "gs10": 3.4,
+    "gs2": 0.96,
+    "yield_spread": 2.44
+  },
+  "2009-10-01": {
+    "cpi_index": 216.51,
+    "cpi_yoy": -0.22,
+    "fed_funds": 0.12,
+    "gs10": 3.39,
+    "gs2": 0.95,
+    "yield_spread": 2.44
+  },
+  "2009-11-01": {
+    "cpi_index": 217.23,
+    "cpi_yoy": 1.91,
+    "fed_funds": 0.12,
+    "gs10": 3.4,
+    "gs2": 0.8,
+    "yield_spread": 2.6
+  },
+  "2009-12-01": {
+    "cpi_index": 217.35,
+    "cpi_yoy": 2.81,
+    "fed_funds": 0.12,
+    "gs10": 3.59,
+    "gs2": 0.87,
+    "yield_spread": 2.72
+  },
+  "2010-01-01": {
+    "cpi_index": 217.49,
+    "cpi_yoy": 2.62,
+    "fed_funds": 0.11,
+    "gs10": 3.73,
+    "gs2": 0.93,
+    "yield_spread": 2.8
+  },
+  "2010-02-01": {
+    "cpi_index": 217.28,
+    "cpi_yoy": 2.15,
+    "fed_funds": 0.13,
+    "gs10": 3.69,
+    "gs2": 0.86,
+    "yield_spread": 2.83
+  },
+  "2010-03-01": {
+    "cpi_index": 217.35,
+    "cpi_yoy": 2.29,
+    "fed_funds": 0.16,
+    "gs10": 3.73,
+    "gs2": 0.96,
+    "yield_spread": 2.77
+  },
+  "2010-04-01": {
+    "cpi_index": 217.4,
+    "cpi_yoy": 2.21,
+    "fed_funds": 0.2,
+    "gs10": 3.85,
+    "gs2": 1.06,
+    "yield_spread": 2.79
+  },
+  "2010-05-01": {
+    "cpi_index": 217.29,
+    "cpi_yoy": 2.0,
+    "fed_funds": 0.2,
+    "gs10": 3.42,
+    "gs2": 0.83,
+    "yield_spread": 2.59
+  },
+  "2010-06-01": {
+    "cpi_index": 217.2,
+    "cpi_yoy": 1.12,
+    "fed_funds": 0.18,
+    "gs10": 3.2,
+    "gs2": 0.72,
+    "yield_spread": 2.48
+  },
+  "2010-07-01": {
+    "cpi_index": 217.6,
+    "cpi_yoy": 1.34,
+    "fed_funds": 0.18,
+    "gs10": 3.01,
+    "gs2": 0.62,
+    "yield_spread": 2.39
+  },
+  "2010-08-01": {
+    "cpi_index": 217.92,
+    "cpi_yoy": 1.15,
+    "fed_funds": 0.19,
+    "gs10": 2.7,
+    "gs2": 0.52,
+    "yield_spread": 2.18
+  },
+  "2010-09-01": {
+    "cpi_index": 218.28,
+    "cpi_yoy": 1.12,
+    "fed_funds": 0.19,
+    "gs10": 2.65,
+    "gs2": 0.48,
+    "yield_spread": 2.17
+  },
+  "2010-10-01": {
+    "cpi_index": 219.04,
+    "cpi_yoy": 1.17,
+    "fed_funds": 0.19,
+    "gs10": 2.54,
+    "gs2": 0.38,
+    "yield_spread": 2.16
+  },
+  "2010-11-01": {
+    "cpi_index": 219.59,
+    "cpi_yoy": 1.08,
+    "fed_funds": 0.19,
+    "gs10": 2.76,
+    "gs2": 0.45,
+    "yield_spread": 2.31
+  },
+  "2010-12-01": {
+    "cpi_index": 220.47,
+    "cpi_yoy": 1.44,
+    "fed_funds": 0.18,
+    "gs10": 3.29,
+    "gs2": 0.62,
+    "yield_spread": 2.67
+  },
+  "2011-01-01": {
+    "cpi_index": 221.19,
+    "cpi_yoy": 1.7,
+    "fed_funds": 0.17,
+    "gs10": 3.39,
+    "gs2": 0.61,
+    "yield_spread": 2.78
+  },
+  "2011-02-01": {
+    "cpi_index": 221.9,
+    "cpi_yoy": 2.12,
+    "fed_funds": 0.16,
+    "gs10": 3.58,
+    "gs2": 0.77,
+    "yield_spread": 2.81
+  },
+  "2011-03-01": {
+    "cpi_index": 223.05,
+    "cpi_yoy": 2.62,
+    "fed_funds": 0.14,
+    "gs10": 3.41,
+    "gs2": 0.7,
+    "yield_spread": 2.71
+  },
+  "2011-04-01": {
+    "cpi_index": 224.09,
+    "cpi_yoy": 3.08,
+    "fed_funds": 0.1,
+    "gs10": 3.46,
+    "gs2": 0.73,
+    "yield_spread": 2.73
+  },
+  "2011-05-01": {
+    "cpi_index": 224.81,
+    "cpi_yoy": 3.46,
+    "fed_funds": 0.09,
+    "gs10": 3.17,
+    "gs2": 0.56,
+    "yield_spread": 2.61
+  },
+  "2011-06-01": {
+    "cpi_index": 224.81,
+    "cpi_yoy": 3.5,
+    "fed_funds": 0.09,
+    "gs10": 3.0,
+    "gs2": 0.41,
+    "yield_spread": 2.59
+  },
+  "2011-07-01": {
+    "cpi_index": 225.4,
+    "cpi_yoy": 3.58,
+    "fed_funds": 0.07,
+    "gs10": 3.0,
+    "gs2": 0.41,
+    "yield_spread": 2.59
+  },
+  "2011-08-01": {
+    "cpi_index": 226.11,
+    "cpi_yoy": 3.75,
+    "fed_funds": 0.1,
+    "gs10": 2.3,
+    "gs2": 0.23,
+    "yield_spread": 2.07
+  },
+  "2011-09-01": {
+    "cpi_index": 226.6,
+    "cpi_yoy": 3.81,
+    "fed_funds": 0.08,
+    "gs10": 1.98,
+    "gs2": 0.21,
+    "yield_spread": 1.77
+  },
+  "2011-10-01": {
+    "cpi_index": 226.75,
+    "cpi_yoy": 3.52,
+    "fed_funds": 0.07,
+    "gs10": 2.15,
+    "gs2": 0.28,
+    "yield_spread": 1.87
+  },
+  "2011-11-01": {
+    "cpi_index": 227.17,
+    "cpi_yoy": 3.45,
+    "fed_funds": 0.08,
+    "gs10": 2.01,
+    "gs2": 0.25,
+    "yield_spread": 1.76
+  },
+  "2011-12-01": {
+    "cpi_index": 227.22,
+    "cpi_yoy": 3.06,
+    "fed_funds": 0.07,
+    "gs10": 1.98,
+    "gs2": 0.26,
+    "yield_spread": 1.72
+  },
+  "2012-01-01": {
+    "cpi_index": 227.84,
+    "cpi_yoy": 3.01,
+    "fed_funds": 0.08,
+    "gs10": 1.97,
+    "gs2": 0.24,
+    "yield_spread": 1.73
+  },
+  "2012-02-01": {
+    "cpi_index": 228.33,
+    "cpi_yoy": 2.9,
+    "fed_funds": 0.1,
+    "gs10": 1.97,
+    "gs2": 0.28,
+    "yield_spread": 1.69
+  },
+  "2012-03-01": {
+    "cpi_index": 228.81,
+    "cpi_yoy": 2.58,
+    "fed_funds": 0.13,
+    "gs10": 2.17,
+    "gs2": 0.34,
+    "yield_spread": 1.83
+  },
+  "2012-04-01": {
+    "cpi_index": 229.19,
+    "cpi_yoy": 2.27,
+    "fed_funds": 0.14,
+    "gs10": 2.05,
+    "gs2": 0.29,
+    "yield_spread": 1.76
+  },
+  "2012-05-01": {
+    "cpi_index": 228.71,
+    "cpi_yoy": 1.74,
+    "fed_funds": 0.16,
+    "gs10": 1.8,
+    "gs2": 0.29,
+    "yield_spread": 1.51
+  },
+  "2012-06-01": {
+    "cpi_index": 228.52,
+    "cpi_yoy": 1.65,
+    "fed_funds": 0.16,
+    "gs10": 1.62,
+    "gs2": 0.29,
+    "yield_spread": 1.33
+  },
+  "2012-07-01": {
+    "cpi_index": 228.59,
+    "cpi_yoy": 1.42,
+    "fed_funds": 0.16,
+    "gs10": 1.53,
+    "gs2": 0.25,
+    "yield_spread": 1.28
+  },
+  "2012-08-01": {
+    "cpi_index": 229.92,
+    "cpi_yoy": 1.69,
+    "fed_funds": 0.13,
+    "gs10": 1.68,
+    "gs2": 0.27,
+    "yield_spread": 1.41
+  },
+  "2012-09-01": {
+    "cpi_index": 231.02,
+    "cpi_yoy": 1.95,
+    "fed_funds": 0.14,
+    "gs10": 1.72,
+    "gs2": 0.26,
+    "yield_spread": 1.46
+  },
+  "2012-10-01": {
+    "cpi_index": 231.64,
+    "cpi_yoy": 2.16,
+    "fed_funds": 0.16,
+    "gs10": 1.75,
+    "gs2": 0.28,
+    "yield_spread": 1.47
+  },
+  "2012-11-01": {
+    "cpi_index": 231.25,
+    "cpi_yoy": 1.8,
+    "fed_funds": 0.16,
+    "gs10": 1.65,
+    "gs2": 0.27,
+    "yield_spread": 1.38
+  },
+  "2012-12-01": {
+    "cpi_index": 231.22,
+    "cpi_yoy": 1.76,
+    "fed_funds": 0.16,
+    "gs10": 1.72,
+    "gs2": 0.26,
+    "yield_spread": 1.46
+  },
+  "2013-01-01": {
+    "cpi_index": 231.68,
+    "cpi_yoy": 1.68,
+    "fed_funds": 0.14,
+    "gs10": 1.91,
+    "gs2": 0.27,
+    "yield_spread": 1.64
+  },
+  "2013-02-01": {
+    "cpi_index": 232.94,
+    "cpi_yoy": 2.02,
+    "fed_funds": 0.15,
+    "gs10": 1.98,
+    "gs2": 0.27,
+    "yield_spread": 1.71
+  },
+  "2013-03-01": {
+    "cpi_index": 232.28,
+    "cpi_yoy": 1.52,
+    "fed_funds": 0.14,
+    "gs10": 1.96,
+    "gs2": 0.26,
+    "yield_spread": 1.7
+  },
+  "2013-04-01": {
+    "cpi_index": 231.8,
+    "cpi_yoy": 1.14,
+    "fed_funds": 0.15,
+    "gs10": 1.76,
+    "gs2": 0.23,
+    "yield_spread": 1.53
+  },
+  "2013-05-01": {
+    "cpi_index": 231.89,
+    "cpi_yoy": 1.39,
+    "fed_funds": 0.11,
+    "gs10": 1.93,
+    "gs2": 0.25,
+    "yield_spread": 1.68
+  },
+  "2013-06-01": {
+    "cpi_index": 232.44,
+    "cpi_yoy": 1.72,
+    "fed_funds": 0.09,
+    "gs10": 2.3,
+    "gs2": 0.33,
+    "yield_spread": 1.97
+  },
+  "2013-07-01": {
+    "cpi_index": 232.9,
+    "cpi_yoy": 1.89,
+    "fed_funds": 0.09,
+    "gs10": 2.58,
+    "gs2": 0.34,
+    "yield_spread": 2.24
+  },
+  "2013-08-01": {
+    "cpi_index": 233.46,
+    "cpi_yoy": 1.54,
+    "fed_funds": 0.08,
+    "gs10": 2.74,
+    "gs2": 0.36,
+    "yield_spread": 2.38
+  },
+  "2013-09-01": {
+    "cpi_index": 233.54,
+    "cpi_yoy": 1.09,
+    "fed_funds": 0.08,
+    "gs10": 2.81,
+    "gs2": 0.4,
+    "yield_spread": 2.41
+  },
+  "2013-10-01": {
+    "cpi_index": 233.67,
+    "cpi_yoy": 0.88,
+    "fed_funds": 0.09,
+    "gs10": 2.62,
+    "gs2": 0.34,
+    "yield_spread": 2.28
+  },
+  "2013-11-01": {
+    "cpi_index": 234.1,
+    "cpi_yoy": 1.23,
+    "fed_funds": 0.08,
+    "gs10": 2.72,
+    "gs2": 0.3,
+    "yield_spread": 2.42
+  },
+  "2013-12-01": {
+    "cpi_index": 234.72,
+    "cpi_yoy": 1.51,
+    "fed_funds": 0.09,
+    "gs10": 2.9,
+    "gs2": 0.34,
+    "yield_spread": 2.56
+  },
+  "2014-01-01": {
+    "cpi_index": 235.29,
+    "cpi_yoy": 1.56,
+    "fed_funds": 0.07,
+    "gs10": 2.86,
+    "gs2": 0.39,
+    "yield_spread": 2.47
+  },
+  "2014-02-01": {
+    "cpi_index": 235.55,
+    "cpi_yoy": 1.12,
+    "fed_funds": 0.07,
+    "gs10": 2.71,
+    "gs2": 0.33,
+    "yield_spread": 2.38
+  },
+  "2014-03-01": {
+    "cpi_index": 236.03,
+    "cpi_yoy": 1.61,
+    "fed_funds": 0.08,
+    "gs10": 2.72,
+    "gs2": 0.4,
+    "yield_spread": 2.32
+  },
+  "2014-04-01": {
+    "cpi_index": 236.47,
+    "cpi_yoy": 2.02,
+    "fed_funds": 0.09,
+    "gs10": 2.71,
+    "gs2": 0.42,
+    "yield_spread": 2.29
+  },
+  "2014-05-01": {
+    "cpi_index": 236.92,
+    "cpi_yoy": 2.17,
+    "fed_funds": 0.09,
+    "gs10": 2.56,
+    "gs2": 0.39,
+    "yield_spread": 2.17
+  },
+  "2014-06-01": {
+    "cpi_index": 237.23,
+    "cpi_yoy": 2.06,
+    "fed_funds": 0.1,
+    "gs10": 2.6,
+    "gs2": 0.45,
+    "yield_spread": 2.15
+  },
+  "2014-07-01": {
+    "cpi_index": 237.5,
+    "cpi_yoy": 1.97,
+    "fed_funds": 0.09,
+    "gs10": 2.54,
+    "gs2": 0.51,
+    "yield_spread": 2.03
+  },
+  "2014-08-01": {
+    "cpi_index": 237.46,
+    "cpi_yoy": 1.72,
+    "fed_funds": 0.09,
+    "gs10": 2.42,
+    "gs2": 0.47,
+    "yield_spread": 1.95
+  },
+  "2014-09-01": {
+    "cpi_index": 237.48,
+    "cpi_yoy": 1.68,
+    "fed_funds": 0.09,
+    "gs10": 2.53,
+    "gs2": 0.57,
+    "yield_spread": 1.96
+  },
+  "2014-10-01": {
+    "cpi_index": 237.43,
+    "cpi_yoy": 1.61,
+    "fed_funds": 0.09,
+    "gs10": 2.3,
+    "gs2": 0.45,
+    "yield_spread": 1.85
+  },
+  "2014-11-01": {
+    "cpi_index": 236.98,
+    "cpi_yoy": 1.23,
+    "fed_funds": 0.09,
+    "gs10": 2.33,
+    "gs2": 0.53,
+    "yield_spread": 1.8
+  },
+  "2014-12-01": {
+    "cpi_index": 236.25,
+    "cpi_yoy": 0.65,
+    "fed_funds": 0.12,
+    "gs10": 2.21,
+    "gs2": 0.64,
+    "yield_spread": 1.57
+  },
+  "2015-01-01": {
+    "cpi_index": 234.75,
+    "cpi_yoy": -0.23,
+    "fed_funds": 0.11,
+    "gs10": 1.88,
+    "gs2": 0.55,
+    "yield_spread": 1.33
+  },
+  "2015-02-01": {
+    "cpi_index": 235.34,
+    "cpi_yoy": -0.09,
+    "fed_funds": 0.11,
+    "gs10": 1.98,
+    "gs2": 0.62,
+    "yield_spread": 1.36
+  },
+  "2015-03-01": {
+    "cpi_index": 235.98,
+    "cpi_yoy": -0.02,
+    "fed_funds": 0.11,
+    "gs10": 2.04,
+    "gs2": 0.64,
+    "yield_spread": 1.4
+  },
+  "2015-04-01": {
+    "cpi_index": 236.22,
+    "cpi_yoy": -0.1,
+    "fed_funds": 0.12,
+    "gs10": 1.94,
+    "gs2": 0.54,
+    "yield_spread": 1.4
+  },
+  "2015-05-01": {
+    "cpi_index": 237.0,
+    "cpi_yoy": 0.04,
+    "fed_funds": 0.12,
+    "gs10": 2.2,
+    "gs2": 0.61,
+    "yield_spread": 1.59
+  },
+  "2015-06-01": {
+    "cpi_index": 237.66,
+    "cpi_yoy": 0.18,
+    "fed_funds": 0.13,
+    "gs10": 2.36,
+    "gs2": 0.69,
+    "yield_spread": 1.67
+  },
+  "2015-07-01": {
+    "cpi_index": 238.03,
+    "cpi_yoy": 0.23,
+    "fed_funds": 0.13,
+    "gs10": 2.32,
+    "gs2": 0.67,
+    "yield_spread": 1.65
+  },
+  "2015-08-01": {
+    "cpi_index": 238.03,
+    "cpi_yoy": 0.24,
+    "fed_funds": 0.14,
+    "gs10": 2.17,
+    "gs2": 0.7,
+    "yield_spread": 1.47
+  },
+  "2015-09-01": {
+    "cpi_index": 237.5,
+    "cpi_yoy": 0.01,
+    "fed_funds": 0.14,
+    "gs10": 2.17,
+    "gs2": 0.71,
+    "yield_spread": 1.46
+  },
+  "2015-10-01": {
+    "cpi_index": 237.73,
+    "cpi_yoy": 0.13,
+    "fed_funds": 0.12,
+    "gs10": 2.07,
+    "gs2": 0.64,
+    "yield_spread": 1.43
+  },
+  "2015-11-01": {
+    "cpi_index": 238.02,
+    "cpi_yoy": 0.44,
+    "fed_funds": 0.12,
+    "gs10": 2.26,
+    "gs2": 0.88,
+    "yield_spread": 1.38
+  },
+  "2015-12-01": {
+    "cpi_index": 237.76,
+    "cpi_yoy": 0.64,
+    "fed_funds": 0.24,
+    "gs10": 2.24,
+    "gs2": 0.98,
+    "yield_spread": 1.26
+  },
+  "2016-01-01": {
+    "cpi_index": 237.65,
+    "cpi_yoy": 1.24,
+    "fed_funds": 0.34,
+    "gs10": 2.09,
+    "gs2": 0.9,
+    "yield_spread": 1.19
+  },
+  "2016-02-01": {
+    "cpi_index": 237.34,
+    "cpi_yoy": 0.85,
+    "fed_funds": 0.38,
+    "gs10": 1.78,
+    "gs2": 0.73,
+    "yield_spread": 1.05
+  },
+  "2016-03-01": {
+    "cpi_index": 238.08,
+    "cpi_yoy": 0.89,
+    "fed_funds": 0.36,
+    "gs10": 1.89,
+    "gs2": 0.88,
+    "yield_spread": 1.01
+  },
+  "2016-04-01": {
+    "cpi_index": 238.99,
+    "cpi_yoy": 1.17,
+    "fed_funds": 0.37,
+    "gs10": 1.81,
+    "gs2": 0.77,
+    "yield_spread": 1.04
+  },
+  "2016-05-01": {
+    "cpi_index": 239.56,
+    "cpi_yoy": 1.08,
+    "fed_funds": 0.37,
+    "gs10": 1.81,
+    "gs2": 0.82,
+    "yield_spread": 0.99
+  },
+  "2016-06-01": {
+    "cpi_index": 240.22,
+    "cpi_yoy": 1.08,
+    "fed_funds": 0.38,
+    "gs10": 1.64,
+    "gs2": 0.73,
+    "yield_spread": 0.91
+  },
+  "2016-07-01": {
+    "cpi_index": 240.1,
+    "cpi_yoy": 0.87,
+    "fed_funds": 0.39,
+    "gs10": 1.5,
+    "gs2": 0.67,
+    "yield_spread": 0.83
+  },
+  "2016-08-01": {
+    "cpi_index": 240.54,
+    "cpi_yoy": 1.06,
+    "fed_funds": 0.4,
+    "gs10": 1.56,
+    "gs2": 0.74,
+    "yield_spread": 0.82
+  },
+  "2016-09-01": {
+    "cpi_index": 241.18,
+    "cpi_yoy": 1.55,
+    "fed_funds": 0.4,
+    "gs10": 1.63,
+    "gs2": 0.77,
+    "yield_spread": 0.86
+  },
+  "2016-10-01": {
+    "cpi_index": 241.74,
+    "cpi_yoy": 1.69,
+    "fed_funds": 0.4,
+    "gs10": 1.76,
+    "gs2": 0.84,
+    "yield_spread": 0.92
+  },
+  "2016-11-01": {
+    "cpi_index": 242.03,
+    "cpi_yoy": 1.68,
+    "fed_funds": 0.41,
+    "gs10": 2.14,
+    "gs2": 0.98,
+    "yield_spread": 1.16
+  },
+  "2016-12-01": {
+    "cpi_index": 242.64,
+    "cpi_yoy": 2.05,
+    "fed_funds": 0.54,
+    "gs10": 2.49,
+    "gs2": 1.2,
+    "yield_spread": 1.29
+  },
+  "2017-01-01": {
+    "cpi_index": 243.62,
+    "cpi_yoy": 2.51,
+    "fed_funds": 0.65,
+    "gs10": 2.43,
+    "gs2": 1.21,
+    "yield_spread": 1.22
+  },
+  "2017-02-01": {
+    "cpi_index": 244.01,
+    "cpi_yoy": 2.81,
+    "fed_funds": 0.66,
+    "gs10": 2.42,
+    "gs2": 1.2,
+    "yield_spread": 1.22
+  },
+  "2017-03-01": {
+    "cpi_index": 243.89,
+    "cpi_yoy": 2.44,
+    "fed_funds": 0.79,
+    "gs10": 2.48,
+    "gs2": 1.31,
+    "yield_spread": 1.17
+  },
+  "2017-04-01": {
+    "cpi_index": 244.19,
+    "cpi_yoy": 2.18,
+    "fed_funds": 0.9,
+    "gs10": 2.3,
+    "gs2": 1.24,
+    "yield_spread": 1.06
+  },
+  "2017-05-01": {
+    "cpi_index": 244.0,
+    "cpi_yoy": 1.86,
+    "fed_funds": 0.91,
+    "gs10": 2.3,
+    "gs2": 1.3,
+    "yield_spread": 1.0
+  },
+  "2017-06-01": {
+    "cpi_index": 244.16,
+    "cpi_yoy": 1.64,
+    "fed_funds": 1.04,
+    "gs10": 2.19,
+    "gs2": 1.34,
+    "yield_spread": 0.85
+  },
+  "2017-07-01": {
+    "cpi_index": 244.24,
+    "cpi_yoy": 1.73,
+    "fed_funds": 1.15,
+    "gs10": 2.32,
+    "gs2": 1.37,
+    "yield_spread": 0.95
+  },
+  "2017-08-01": {
+    "cpi_index": 245.18,
+    "cpi_yoy": 1.93,
+    "fed_funds": 1.16,
+    "gs10": 2.21,
+    "gs2": 1.34,
+    "yield_spread": 0.87
+  },
+  "2017-09-01": {
+    "cpi_index": 246.44,
+    "cpi_yoy": 2.18,
+    "fed_funds": 1.15,
+    "gs10": 2.2,
+    "gs2": 1.38,
+    "yield_spread": 0.82
+  },
+  "2017-10-01": {
+    "cpi_index": 246.63,
+    "cpi_yoy": 2.02,
+    "fed_funds": 1.15,
+    "gs10": 2.36,
+    "gs2": 1.55,
+    "yield_spread": 0.81
+  },
+  "2017-11-01": {
+    "cpi_index": 247.28,
+    "cpi_yoy": 2.17,
+    "fed_funds": 1.16,
+    "gs10": 2.35,
+    "gs2": 1.7,
+    "yield_spread": 0.65
+  },
+  "2017-12-01": {
+    "cpi_index": 247.8,
+    "cpi_yoy": 2.13,
+    "fed_funds": 1.3,
+    "gs10": 2.4,
+    "gs2": 1.84,
+    "yield_spread": 0.56
+  },
+  "2018-01-01": {
+    "cpi_index": 248.86,
+    "cpi_yoy": 2.15,
+    "fed_funds": 1.41,
+    "gs10": 2.58,
+    "gs2": 2.03,
+    "yield_spread": 0.55
+  },
+  "2018-02-01": {
+    "cpi_index": 249.53,
+    "cpi_yoy": 2.26,
+    "fed_funds": 1.42,
+    "gs10": 2.86,
+    "gs2": 2.18,
+    "yield_spread": 0.68
+  },
+  "2018-03-01": {
+    "cpi_index": 249.58,
+    "cpi_yoy": 2.33,
+    "fed_funds": 1.51,
+    "gs10": 2.84,
+    "gs2": 2.28,
+    "yield_spread": 0.56
+  },
+  "2018-04-01": {
+    "cpi_index": 250.23,
+    "cpi_yoy": 2.47,
+    "fed_funds": 1.69,
+    "gs10": 2.87,
+    "gs2": 2.38,
+    "yield_spread": 0.49
+  },
+  "2018-05-01": {
+    "cpi_index": 250.79,
+    "cpi_yoy": 2.78,
+    "fed_funds": 1.7,
+    "gs10": 2.98,
+    "gs2": 2.51,
+    "yield_spread": 0.47
+  },
+  "2018-06-01": {
+    "cpi_index": 251.02,
+    "cpi_yoy": 2.81,
+    "fed_funds": 1.82,
+    "gs10": 2.91,
+    "gs2": 2.53,
+    "yield_spread": 0.38
+  },
+  "2018-07-01": {
+    "cpi_index": 251.21,
+    "cpi_yoy": 2.85,
+    "fed_funds": 1.91,
+    "gs10": 2.89,
+    "gs2": 2.61,
+    "yield_spread": 0.28
+  },
+  "2018-08-01": {
+    "cpi_index": 251.66,
+    "cpi_yoy": 2.64,
+    "fed_funds": 1.91,
+    "gs10": 2.89,
+    "gs2": 2.64,
+    "yield_spread": 0.25
+  },
+  "2018-09-01": {
+    "cpi_index": 252.18,
+    "cpi_yoy": 2.33,
+    "fed_funds": 1.95,
+    "gs10": 3.0,
+    "gs2": 2.77,
+    "yield_spread": 0.23
+  },
+  "2018-10-01": {
+    "cpi_index": 252.77,
+    "cpi_yoy": 2.49,
+    "fed_funds": 2.19,
+    "gs10": 3.15,
+    "gs2": 2.86,
+    "yield_spread": 0.29
+  },
+  "2018-11-01": {
+    "cpi_index": 252.59,
+    "cpi_yoy": 2.15,
+    "fed_funds": 2.2,
+    "gs10": 3.12,
+    "gs2": 2.86,
+    "yield_spread": 0.26
+  },
+  "2018-12-01": {
+    "cpi_index": 252.77,
+    "cpi_yoy": 2.0,
+    "fed_funds": 2.27,
+    "gs10": 2.83,
+    "gs2": 2.68,
+    "yield_spread": 0.15
+  },
+  "2019-01-01": {
+    "cpi_index": 252.56,
+    "cpi_yoy": 1.49,
+    "fed_funds": 2.4,
+    "gs10": 2.71,
+    "gs2": 2.54,
+    "yield_spread": 0.17
+  },
+  "2019-02-01": {
+    "cpi_index": 253.32,
+    "cpi_yoy": 1.52,
+    "fed_funds": 2.4,
+    "gs10": 2.68,
+    "gs2": 2.5,
+    "yield_spread": 0.18
+  },
+  "2019-03-01": {
+    "cpi_index": 254.28,
+    "cpi_yoy": 1.88,
+    "fed_funds": 2.41,
+    "gs10": 2.57,
+    "gs2": 2.41,
+    "yield_spread": 0.16
+  },
+  "2019-04-01": {
+    "cpi_index": 255.23,
+    "cpi_yoy": 2.0,
+    "fed_funds": 2.42,
+    "gs10": 2.53,
+    "gs2": 2.34,
+    "yield_spread": 0.19
+  },
+  "2019-05-01": {
+    "cpi_index": 255.3,
+    "cpi_yoy": 1.8,
+    "fed_funds": 2.39,
+    "gs10": 2.4,
+    "gs2": 2.21,
+    "yield_spread": 0.19
+  },
+  "2019-06-01": {
+    "cpi_index": 255.21,
+    "cpi_yoy": 1.67,
+    "fed_funds": 2.38,
+    "gs10": 2.07,
+    "gs2": 1.81,
+    "yield_spread": 0.26
+  },
+  "2019-07-01": {
+    "cpi_index": 255.8,
+    "cpi_yoy": 1.83,
+    "fed_funds": 2.4,
+    "gs10": 2.06,
+    "gs2": 1.84,
+    "yield_spread": 0.22
+  },
+  "2019-08-01": {
+    "cpi_index": 256.04,
+    "cpi_yoy": 1.74,
+    "fed_funds": 2.13,
+    "gs10": 1.63,
+    "gs2": 1.57,
+    "yield_spread": 0.06
+  },
+  "2019-09-01": {
+    "cpi_index": 256.43,
+    "cpi_yoy": 1.68,
+    "fed_funds": 2.04,
+    "gs10": 1.7,
+    "gs2": 1.65,
+    "yield_spread": 0.05
+  },
+  "2019-10-01": {
+    "cpi_index": 257.15,
+    "cpi_yoy": 1.73,
+    "fed_funds": 1.83,
+    "gs10": 1.71,
+    "gs2": 1.55,
+    "yield_spread": 0.16
+  },
+  "2019-11-01": {
+    "cpi_index": 257.88,
+    "cpi_yoy": 2.09,
+    "fed_funds": 1.55,
+    "gs10": 1.81,
+    "gs2": 1.61,
+    "yield_spread": 0.2
+  },
+  "2019-12-01": {
+    "cpi_index": 258.63,
+    "cpi_yoy": 2.32,
+    "fed_funds": 1.55,
+    "gs10": 1.86,
+    "gs2": 1.61,
+    "yield_spread": 0.25
+  },
+  "2020-01-01": {
+    "cpi_index": 259.13,
+    "cpi_yoy": 2.6,
+    "fed_funds": 1.55,
+    "gs10": 1.76,
+    "gs2": 1.52,
+    "yield_spread": 0.24
+  },
+  "2020-02-01": {
+    "cpi_index": 259.25,
+    "cpi_yoy": 2.34,
+    "fed_funds": 1.58,
+    "gs10": 1.5,
+    "gs2": 1.33,
+    "yield_spread": 0.17
+  },
+  "2020-03-01": {
+    "cpi_index": 258.08,
+    "cpi_yoy": 1.49,
+    "fed_funds": 0.65,
+    "gs10": 0.87,
+    "gs2": 0.45,
+    "yield_spread": 0.42
+  },
+  "2020-04-01": {
+    "cpi_index": 256.03,
+    "cpi_yoy": 0.31,
+    "fed_funds": 0.05,
+    "gs10": 0.66,
+    "gs2": 0.22,
+    "yield_spread": 0.44
+  },
+  "2020-05-01": {
+    "cpi_index": 255.8,
+    "cpi_yoy": 0.2,
+    "fed_funds": 0.05,
+    "gs10": 0.67,
+    "gs2": 0.17,
+    "yield_spread": 0.5
+  },
+  "2020-06-01": {
+    "cpi_index": 257.04,
+    "cpi_yoy": 0.72,
+    "fed_funds": 0.08,
+    "gs10": 0.73,
+    "gs2": 0.19,
+    "yield_spread": 0.54
+  },
+  "2020-07-01": {
+    "cpi_index": 258.35,
+    "cpi_yoy": 1.0,
+    "fed_funds": 0.09,
+    "gs10": 0.62,
+    "gs2": 0.15,
+    "yield_spread": 0.47
+  },
+  "2020-08-01": {
+    "cpi_index": 259.32,
+    "cpi_yoy": 1.28,
+    "fed_funds": 0.1,
+    "gs10": 0.65,
+    "gs2": 0.14,
+    "yield_spread": 0.51
+  },
+  "2020-09-01": {
+    "cpi_index": 260.0,
+    "cpi_yoy": 1.39,
+    "fed_funds": 0.09,
+    "gs10": 0.68,
+    "gs2": 0.13,
+    "yield_spread": 0.55
+  },
+  "2020-10-01": {
+    "cpi_index": 260.32,
+    "cpi_yoy": 1.23,
+    "fed_funds": 0.09,
+    "gs10": 0.79,
+    "gs2": 0.15,
+    "yield_spread": 0.64
+  },
+  "2020-11-01": {
+    "cpi_index": 260.91,
+    "cpi_yoy": 1.18,
+    "fed_funds": 0.09,
+    "gs10": 0.87,
+    "gs2": 0.17,
+    "yield_spread": 0.7
+  },
+  "2020-12-01": {
+    "cpi_index": 262.04,
+    "cpi_yoy": 1.32,
+    "fed_funds": 0.09,
+    "gs10": 0.93,
+    "gs2": 0.14,
+    "yield_spread": 0.79
+  },
+  "2021-01-01": {
+    "cpi_index": 262.69,
+    "cpi_yoy": 1.37,
+    "fed_funds": 0.09,
+    "gs10": 1.08,
+    "gs2": 0.13,
+    "yield_spread": 0.95
+  },
+  "2021-02-01": {
+    "cpi_index": 263.58,
+    "cpi_yoy": 1.67,
+    "fed_funds": 0.08,
+    "gs10": 1.26,
+    "gs2": 0.12,
+    "yield_spread": 1.14
+  },
+  "2021-03-01": {
+    "cpi_index": 264.96,
+    "cpi_yoy": 2.67,
+    "fed_funds": 0.07,
+    "gs10": 1.61,
+    "gs2": 0.15,
+    "yield_spread": 1.46
+  },
+  "2021-04-01": {
+    "cpi_index": 266.61,
+    "cpi_yoy": 4.13,
+    "fed_funds": 0.07,
+    "gs10": 1.64,
+    "gs2": 0.16,
+    "yield_spread": 1.48
+  },
+  "2021-05-01": {
+    "cpi_index": 268.38,
+    "cpi_yoy": 4.92,
+    "fed_funds": 0.06,
+    "gs10": 1.62,
+    "gs2": 0.16,
+    "yield_spread": 1.46
+  },
+  "2021-06-01": {
+    "cpi_index": 270.65,
+    "cpi_yoy": 5.3,
+    "fed_funds": 0.08,
+    "gs10": 1.52,
+    "gs2": 0.2,
+    "yield_spread": 1.32
+  },
+  "2021-07-01": {
+    "cpi_index": 271.9,
+    "cpi_yoy": 5.25,
+    "fed_funds": 0.1,
+    "gs10": 1.32,
+    "gs2": 0.22,
+    "yield_spread": 1.1
+  },
+  "2021-08-01": {
+    "cpi_index": 272.68,
+    "cpi_yoy": 5.15,
+    "fed_funds": 0.09,
+    "gs10": 1.28,
+    "gs2": 0.22,
+    "yield_spread": 1.06
+  },
+  "2021-09-01": {
+    "cpi_index": 273.91,
+    "cpi_yoy": 5.35,
+    "fed_funds": 0.08,
+    "gs10": 1.37,
+    "gs2": 0.24,
+    "yield_spread": 1.13
+  },
+  "2021-10-01": {
+    "cpi_index": 276.55,
+    "cpi_yoy": 6.24,
+    "fed_funds": 0.08,
+    "gs10": 1.58,
+    "gs2": 0.39,
+    "yield_spread": 1.19
+  },
+  "2021-11-01": {
+    "cpi_index": 278.92,
+    "cpi_yoy": 6.9,
+    "fed_funds": 0.08,
+    "gs10": 1.56,
+    "gs2": 0.51,
+    "yield_spread": 1.05
+  },
+  "2021-12-01": {
+    "cpi_index": 280.85,
+    "cpi_yoy": 7.17,
+    "fed_funds": 0.08,
+    "gs10": 1.47,
+    "gs2": 0.68,
+    "yield_spread": 0.79
+  },
+  "2022-01-01": {
+    "cpi_index": 282.54,
+    "cpi_yoy": 7.56,
+    "fed_funds": 0.08,
+    "gs10": 1.76,
+    "gs2": 0.98,
+    "yield_spread": 0.78
+  },
+  "2022-02-01": {
+    "cpi_index": 284.5,
+    "cpi_yoy": 7.94,
+    "fed_funds": 0.08,
+    "gs10": 1.93,
+    "gs2": 1.44,
+    "yield_spread": 0.49
+  },
+  "2022-03-01": {
+    "cpi_index": 287.67,
+    "cpi_yoy": 8.57,
+    "fed_funds": 0.2,
+    "gs10": 2.13,
+    "gs2": 1.91,
+    "yield_spread": 0.22
+  },
+  "2022-04-01": {
+    "cpi_index": 288.56,
+    "cpi_yoy": 8.23,
+    "fed_funds": 0.33,
+    "gs10": 2.75,
+    "gs2": 2.54,
+    "yield_spread": 0.21
+  },
+  "2022-05-01": {
+    "cpi_index": 291.3,
+    "cpi_yoy": 8.54,
+    "fed_funds": 0.77,
+    "gs10": 2.9,
+    "gs2": 2.62,
+    "yield_spread": 0.28
+  },
+  "2022-06-01": {
+    "cpi_index": 294.96,
+    "cpi_yoy": 8.98,
+    "fed_funds": 1.21,
+    "gs10": 3.14,
+    "gs2": 3.0,
+    "yield_spread": 0.14
+  },
+  "2022-07-01": {
+    "cpi_index": 294.91,
+    "cpi_yoy": 8.46,
+    "fed_funds": 1.68,
+    "gs10": 2.9,
+    "gs2": 3.04,
+    "yield_spread": -0.14
+  },
+  "2022-08-01": {
+    "cpi_index": 295.1,
+    "cpi_yoy": 8.22,
+    "fed_funds": 2.33,
+    "gs10": 2.9,
+    "gs2": 3.25,
+    "yield_spread": -0.35
+  },
+  "2022-09-01": {
+    "cpi_index": 296.35,
+    "cpi_yoy": 8.19,
+    "fed_funds": 2.56,
+    "gs10": 3.52,
+    "gs2": 3.86,
+    "yield_spread": -0.34
+  },
+  "2022-10-01": {
+    "cpi_index": 298.01,
+    "cpi_yoy": 7.76,
+    "fed_funds": 3.08,
+    "gs10": 3.98,
+    "gs2": 4.38,
+    "yield_spread": -0.4
+  },
+  "2022-11-01": {
+    "cpi_index": 298.79,
+    "cpi_yoy": 7.12,
+    "fed_funds": 3.78,
+    "gs10": 3.89,
+    "gs2": 4.5,
+    "yield_spread": -0.61
+  },
+  "2022-12-01": {
+    "cpi_index": 298.83,
+    "cpi_yoy": 6.4,
+    "fed_funds": 4.1,
+    "gs10": 3.62,
+    "gs2": 4.29,
+    "yield_spread": -0.67
+  },
+  "2023-01-01": {
+    "cpi_index": 300.42,
+    "cpi_yoy": 6.33,
+    "fed_funds": 4.33,
+    "gs10": 3.53,
+    "gs2": 4.21,
+    "yield_spread": -0.68
+  },
+  "2023-02-01": {
+    "cpi_index": 301.45,
+    "cpi_yoy": 5.96,
+    "fed_funds": 4.57,
+    "gs10": 3.75,
+    "gs2": 4.53,
+    "yield_spread": -0.78
+  },
+  "2023-03-01": {
+    "cpi_index": 301.82,
+    "cpi_yoy": 4.92,
+    "fed_funds": 4.65,
+    "gs10": 3.66,
+    "gs2": 4.3,
+    "yield_spread": -0.64
+  },
+  "2023-04-01": {
+    "cpi_index": 302.85,
+    "cpi_yoy": 4.95,
+    "fed_funds": 4.83,
+    "gs10": 3.46,
+    "gs2": 4.02,
+    "yield_spread": -0.56
+  },
+  "2023-05-01": {
+    "cpi_index": 303.33,
+    "cpi_yoy": 4.13,
+    "fed_funds": 5.06,
+    "gs10": 3.57,
+    "gs2": 4.13,
+    "yield_spread": -0.56
+  },
+  "2023-06-01": {
+    "cpi_index": 304.01,
+    "cpi_yoy": 3.07,
+    "fed_funds": 5.08,
+    "gs10": 3.75,
+    "gs2": 4.64,
+    "yield_spread": -0.89
+  },
+  "2023-07-01": {
+    "cpi_index": 304.61,
+    "cpi_yoy": 3.29,
+    "fed_funds": 5.12,
+    "gs10": 3.9,
+    "gs2": 4.83,
+    "yield_spread": -0.93
+  },
+  "2023-08-01": {
+    "cpi_index": 306.08,
+    "cpi_yoy": 3.72,
+    "fed_funds": 5.33,
+    "gs10": 4.17,
+    "gs2": 4.9,
+    "yield_spread": -0.73
+  },
+  "2023-09-01": {
+    "cpi_index": 307.28,
+    "cpi_yoy": 3.69,
+    "fed_funds": 5.33,
+    "gs10": 4.38,
+    "gs2": 5.02,
+    "yield_spread": -0.64
+  },
+  "2023-10-01": {
+    "cpi_index": 307.7,
+    "cpi_yoy": 3.25,
+    "fed_funds": 5.33,
+    "gs10": 4.8,
+    "gs2": 5.07,
+    "yield_spread": -0.27
+  },
+  "2023-11-01": {
+    "cpi_index": 308.15,
+    "cpi_yoy": 3.13,
+    "fed_funds": 5.33,
+    "gs10": 4.5,
+    "gs2": 4.88,
+    "yield_spread": -0.38
+  },
+  "2023-12-01": {
+    "cpi_index": 308.74,
+    "cpi_yoy": 3.32,
+    "fed_funds": 5.33,
+    "gs10": 4.02,
+    "gs2": 4.46,
+    "yield_spread": -0.44
+  },
+  "2024-01-01": {
+    "cpi_index": 309.7,
+    "cpi_yoy": 3.09,
+    "fed_funds": 5.33,
+    "gs10": 4.06,
+    "gs2": 4.32,
+    "yield_spread": -0.26
+  },
+  "2024-02-01": {
+    "cpi_index": 310.97,
+    "cpi_yoy": 3.16,
+    "fed_funds": 5.33,
+    "gs10": 4.21,
+    "gs2": 4.54,
+    "yield_spread": -0.33
+  },
+  "2024-03-01": {
+    "cpi_index": 312.35,
+    "cpi_yoy": 3.49,
+    "fed_funds": 5.33,
+    "gs10": 4.21,
+    "gs2": 4.59,
+    "yield_spread": -0.38
+  },
+  "2024-04-01": {
+    "cpi_index": 313.02,
+    "cpi_yoy": 3.36,
+    "fed_funds": 5.33,
+    "gs10": 4.54,
+    "gs2": 4.87,
+    "yield_spread": -0.33
+  },
+  "2024-05-01": {
+    "cpi_index": 313.18,
+    "cpi_yoy": 3.24,
+    "fed_funds": 5.33,
+    "gs10": 4.48,
+    "gs2": 4.86,
+    "yield_spread": -0.38
+  },
+  "2024-06-01": {
+    "cpi_index": 313.04,
+    "cpi_yoy": 2.97,
+    "fed_funds": 5.33,
+    "gs10": 4.31,
+    "gs2": 4.74,
+    "yield_spread": -0.43
+  },
+  "2024-07-01": {
+    "cpi_index": 313.57,
+    "cpi_yoy": 2.94,
+    "fed_funds": 5.33,
+    "gs10": 4.25,
+    "gs2": 4.5,
+    "yield_spread": -0.25
+  },
+  "2024-08-01": {
+    "cpi_index": 314.06,
+    "cpi_yoy": 2.61,
+    "fed_funds": 5.33,
+    "gs10": 3.87,
+    "gs2": 3.97,
+    "yield_spread": -0.1
+  },
+  "2024-09-01": {
+    "cpi_index": 314.73,
+    "cpi_yoy": 2.43,
+    "fed_funds": 5.13,
+    "gs10": 3.72,
+    "gs2": 3.62,
+    "yield_spread": 0.1
+  },
+  "2024-10-01": {
+    "cpi_index": 315.63,
+    "cpi_yoy": 2.58,
+    "fed_funds": 4.83,
+    "gs10": 4.1,
+    "gs2": 3.97,
+    "yield_spread": 0.13
+  },
+  "2024-11-01": {
+    "cpi_index": 316.53,
+    "cpi_yoy": 2.72,
+    "fed_funds": 4.64,
+    "gs10": 4.36,
+    "gs2": 4.26,
+    "yield_spread": 0.1
+  },
+  "2024-12-01": {
+    "cpi_index": 317.6,
+    "cpi_yoy": 2.87,
+    "fed_funds": 4.48,
+    "gs10": 4.39,
+    "gs2": 4.23,
+    "yield_spread": 0.16
+  },
+  "2025-01-01": {
+    "cpi_index": 318.96,
+    "cpi_yoy": 2.99,
+    "fed_funds": 4.33,
+    "gs10": 4.63,
+    "gs2": 4.27,
+    "yield_spread": 0.36
+  },
+  "2025-02-01": {
+    "cpi_index": 319.68,
+    "cpi_yoy": 2.8,
+    "fed_funds": 4.33,
+    "gs10": 4.45,
+    "gs2": 4.21,
+    "yield_spread": 0.24
+  },
+  "2025-03-01": {
+    "cpi_index": 319.79,
+    "cpi_yoy": 2.38,
+    "fed_funds": 4.33,
+    "gs10": 4.28,
+    "gs2": 3.97,
+    "yield_spread": 0.31
+  },
+  "2025-04-01": {
+    "cpi_index": 320.3,
+    "cpi_yoy": 2.33,
+    "fed_funds": 4.33,
+    "gs10": 4.28,
+    "gs2": 3.78,
+    "yield_spread": 0.5
+  },
+  "2025-05-01": {
+    "cpi_index": 320.62,
+    "cpi_yoy": 2.38,
+    "fed_funds": 4.33,
+    "gs10": 4.42,
+    "gs2": 3.92,
+    "yield_spread": 0.5
+  },
+  "2025-06-01": {
+    "cpi_index": 321.44,
+    "cpi_yoy": 2.68,
+    "fed_funds": 4.33,
+    "gs10": 4.38,
+    "gs2": 3.89,
+    "yield_spread": 0.49
+  },
+  "2025-07-01": {
+    "cpi_index": 322.17,
+    "cpi_yoy": 2.74,
+    "fed_funds": 4.33,
+    "gs10": 4.39,
+    "gs2": 3.88,
+    "yield_spread": 0.51
+  },
+  "2025-08-01": {
+    "cpi_index": 323.29,
+    "cpi_yoy": 2.94,
+    "fed_funds": 4.33,
+    "gs10": 4.26,
+    "gs2": 3.7,
+    "yield_spread": 0.56
+  },
+  "2025-09-01": {
+    "cpi_index": 324.24,
+    "cpi_yoy": 3.02,
+    "fed_funds": 4.22,
+    "gs10": 4.12,
+    "gs2": 3.57,
+    "yield_spread": 0.55
+  },
+  "2025-10-01": {
+    "cpi_index": 324.24,
+    "cpi_yoy": 2.73,
+    "fed_funds": 4.09,
+    "gs10": 4.06,
+    "gs2": 3.52,
+    "yield_spread": 0.54
+  },
+  "2025-11-01": {
+    "cpi_index": 325.06,
+    "cpi_yoy": 2.7,
+    "fed_funds": 3.88,
+    "gs10": 4.09,
+    "gs2": 3.55,
+    "yield_spread": 0.54
+  },
+  "2025-12-01": {
+    "cpi_index": 326.03,
+    "cpi_yoy": 2.65,
+    "fed_funds": 3.72,
+    "gs10": 4.14,
+    "gs2": 3.5,
+    "yield_spread": 0.64
+  },
+  "2026-01-01": {
+    "cpi_index": 326.59,
+    "cpi_yoy": 2.39,
+    "fed_funds": 3.64,
+    "gs10": 4.21,
+    "gs2": 3.54,
+    "yield_spread": 0.67
+  },
+  "2026-02-01": {
+    "cpi_index": 327.46,
+    "cpi_yoy": 2.43,
+    "fed_funds": 3.64,
+    "gs10": 4.13,
+    "gs2": 3.47,
+    "yield_spread": 0.66
+  },
+  "2026-03-01": {
+    "cpi_index": 330.29,
+    "cpi_yoy": 3.29,
+    "fed_funds": 3.64,
+    "gs10": 4.25,
+    "gs2": 3.71,
+    "yield_spread": 0.54
+  }
+};

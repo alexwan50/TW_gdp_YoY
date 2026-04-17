@@ -1,3 +1,4 @@
+
 // Centralized state management with localStorage persistence
 import { GDP_YOY_DATA } from './gdpData.js';
 
@@ -62,9 +63,13 @@ export function getGdpData() {
     const saved = localStorage.getItem(GDP_STORAGE_KEY);
     if (saved) {
       const data = JSON.parse(saved);
-      if (Array.isArray(data) && data.length > 0) {
-        return data;
+      // VALIDATION: Ensure data has same length as default and is not truncated/null-filled
+      if (Array.isArray(data) && data.length >= GDP_YOY_DATA.length) {
+        const lastFew = data.slice(-4);
+        const hasForecast = lastFew.some(v => v !== null && v !== undefined);
+        if (hasForecast) return data;
       }
+      console.warn('Stored GDP data is invalid or missing forecast, using default.');
     }
   } catch (e) {
     console.warn('Failed to load custom GDP data', e);
